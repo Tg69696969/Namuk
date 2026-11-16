@@ -34,9 +34,9 @@ h1 span:nth-child(3n){color:var(--pink)}h1 span:nth-child(3n+1){color:var(--lav)
 button{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:999px;padding:13px 24px;background:var(--btn);color:var(--btntext);cursor:pointer;box-shadow:0 6px 0 rgba(90,10,90,.4);transition:transform .1s,box-shadow .1s}
 button:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(90,10,90,.4)}
 button:focus-visible,.fl:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
-.msg{display:none;background:var(--card);backdrop-filter:blur(6px);border:2px solid rgba(255,255,255,.35);border-radius:28px;padding:22px 20px;margin-top:10px;font-size:18px;line-height:1.55}
+.msg{display:none;background:var(--card);backdrop-filter:blur(6px);border:2px solid rgba(255,255,255,.35);border-radius:28px;padding:22px 20px;margin-top:10px;font-size:18px;line-height:1.7;text-align:justify;text-justify:inter-word}
 .msg.show{display:block;animation:pop .8s cubic-bezier(.3,1.6,.5,1) both}
-.msg b{font-family:"Pacifico",cursive;font-weight:400;font-size:26px;color:var(--pink);display:block;margin-bottom:6px}
+.msg b{font-family:"Pacifico",cursive;font-weight:400;font-size:26px;color:var(--pink);display:block;margin-bottom:10px;text-align:center}.msg .lyr{text-align:center}
 .b{position:fixed;left:var(--x);bottom:-20vh;width:var(--s);height:calc(var(--s)*1.22);border-radius:50% 50% 48% 48%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.8),transparent 28%),var(--c);opacity:.85;z-index:1;pointer-events:none;animation:rise var(--d) linear var(--dl) infinite}
 .b::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:46px;background:currentColor;opacity:.4}
 .h{position:fixed;left:var(--x);bottom:-10vh;font-size:var(--s);color:var(--c);z-index:1;pointer-events:none;opacity:.8;animation:rise var(--d) linear var(--dl) infinite}
