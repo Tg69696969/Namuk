@@ -18,7 +18,12 @@ h1{font-family:"Pacifico",cursive;font-weight:400;font-size:clamp(38px,12vw,70px
 h1 span{display:inline-block;animation:pop .7s cubic-bezier(.3,1.6,.5,1) both}
 h1 span:nth-child(3n){color:var(--pink)}h1 span:nth-child(3n+1){color:var(--lav)}h1 span:nth-child(3n+2){color:var(--yellow)}
 @keyframes pop{from{transform:translateY(-40px) scale(.2) rotate(-25deg);opacity:0}to{transform:none;opacity:1}}
-.sub{font-size:18px;margin:0 0 4px}
+.sub{
+  font-size:18px;
+  margin:25px 0 4px;
+  position:relative;
+  z-index:2;
+}
 #cake{width:min(86vw,360px);height:auto;margin-top:6px;animation:bob 3.2s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(-8px)}}
 .fl{cursor:pointer}
@@ -50,7 +55,7 @@ button:focus-visible,.fl:focus-visible{outline:3px solid var(--yellow);outline-o
   <div class="date">11.17</div>
   <p class="hi">Төрсөн өдрийн мэнд,</p>
   <h1 id="name" aria-label="Намуунжин"></h1>
-  <p class="sub" id="sub">Хүслээ бодоод, дэнлүүгээ үлээгээрэй 🕯️</p>
+  <p class="sub" id="sub">Хүслээ бодоод, лаагаа үлээгээрэй 🕯️</p>
 
   <svg id="cake" viewBox="0 0 300 270" role="img" aria-label="Төрсөн өдрийн бялуу">
     <ellipse cx="150" cy="248" rx="135" ry="16" fill="#e0c8ff"/>
